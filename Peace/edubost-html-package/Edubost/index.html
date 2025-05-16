@@ -54,15 +54,17 @@
             <div class="container">
                 <div class="header__wrap ul_li_between">
                     <div class="header-logo">
-                        <a href="index.html"><img src="assets/img/logo/logo-2.png" alt=""></a>
+                        <a href="index.html"><img src="assets/img/logo/logo-2.svg" alt=""></a>
                     </div>
                     <div class="main-menu__wrap ul_li navbar navbar-expand-lg">
                         <nav class="main-menu collapse navbar-collapse">
                             <ul>
-                                <li>
+                                <li class="menu-item-has-children active">
                                     <a href="index.html">Home</a>
                                     <ul class="submenu">
                                         <li><a href="index.html">University</a></li>
+                                        <li><a href="home-2.html">College</a></li>
+                                        <li class="active"><a href="home-3.html">High School</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -202,150 +204,46 @@
     <!-- header end -->
 
     <!-- header search start -->
-    
+    <div class="header-search-form-wrapper">
+        <div class="xb-search-close xb-close"></div>
+        <div class="header-search-container">
+            <form role="search" class="search-form" action="#">
+                <input type="search" class="search-field" placeholder="Search …" value="" name="s">
+                <button type="submit" class="search-submit"><i class="far fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <div class="body-overlay"></div>
 
     <!-- main area start  -->
     <main>
-        <!-- hero carousel section start -->
-        <section class="hero hero-style-three ul_li pos-rel" style="padding:0;">
-            <div class="container-fluid" style="padding:0;">
-                <div class="swiper hero-swiper">
-                    <div class="swiper-wrapper">
-                        <!-- Slide 1 -->
-                        <div class="swiper-slide pos-rel">
-                            <img src="assets/img/hero/slide1.jpg" alt="Slide 1" style="width:100%;height:800px;object-fit:cover;display:block;">
-                            <div class="hero-caption" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;text-align:center;
-                                background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:30px 60px;border-radius:10px;box-shadow:0 4px 32px 0 rgba(0,0,0,0.15);">
-                                <h2 style="font-size:3rem;font-weight:700;margin-bottom:10px;">Campus 1 Admission Open</h2>
-                                <p style="font-size:1.5rem;">Apply now for the 2024 session</p>
+        <!-- hero section start  -->
+        <section class="hero hero-style-three ul_li pos-rel" data-background="assets/img/bg/hero_bg02.jpg">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="hero__content-wrap">
+                            <div class="section-title clr-white pt-25">
+                                <span class="sub-title wow fadeInUp" data-wow-delay="0ms" data-wow-duration=".4s">Welcome to edubost high school</span>
+                                <h1 class="title mb-25 wow fadeInUp" data-wow-delay="200ms" data-wow-duration=".4s">Your Future Begins at edubost high school</h1>
+                                <p class="content wow fadeInUp" data-wow-delay="400ms" data-wow-duration=".4s">We are dedicated to providing an exceptional education that prepares students for success in school, careers, and life.</p>
                             </div>
-                        </div>
-                        <!-- Slide 2 -->
-                        <div class="swiper-slide pos-rel">
-                            <img src="assets/img/hero/slide2.jpg" alt="Slide 2" style="width:100%;height:800px;object-fit:cover;display:block;">
-                            <div class="hero-caption" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;text-align:center;
-                                background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:30px 60px;border-radius:10px;box-shadow:0 4px 32px 0 rgba(0,0,0,0.15);">
-                                <h2 style="font-size:3rem;font-weight:700;margin-bottom:10px;">Campus 2 Admission Open</h2>
-                                <p style="font-size:1.5rem;">Join our vibrant community</p>
-                            </div>
-                        </div>
-                        <!-- Slide 3 -->
-                        <div class="swiper-slide pos-rel">
-                            <img src="assets/img/hero/slide3.jpg" alt="Slide 3" style="width:100%;height:800px;object-fit:cover;display:block;">
-                            <div class="hero-caption" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;text-align:center;
-                                background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:30px 60px;border-radius:10px;box-shadow:0 4px 32px 0 rgba(0,0,0,0.15);">
-                                <h2 style="font-size:3rem;font-weight:700;margin-bottom:10px;">Explore Our Modern Campus</h2>
-                                <p style="font-size:1.5rem;">State-of-the-art facilities</p>
-                            </div>
-                        </div>
-                        <!-- Slide 4 -->
-                        <div class="swiper-slide pos-rel">
-                            <img src="assets/img/hero/slide4.jpg" alt="Slide 4" style="width:100%;height:800px;object-fit:cover;display:block;">
-                            <div class="hero-caption" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;text-align:center;
-                                background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:30px 60px;border-radius:10px;box-shadow:0 4px 32px 0 rgba(0,0,0,0.15);">
-                                <h2 style="font-size:3rem;font-weight:700;margin-bottom:10px;">World-Class Faculty</h2>
-                                <p style="font-size:1.5rem;">Learn from the best educators</p>
-                            </div>
-                        </div>
-                        <!-- Slide 5 -->
-                        <div class="swiper-slide pos-rel">
-                            <img src="assets/img/hero/slide5.jpg" alt="Slide 5" style="width:100%;height:800px;object-fit:cover;display:block;">
-                            <div class="hero-caption" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;text-align:center;
-                                background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:30px 60px;border-radius:10px;box-shadow:0 4px 32px 0 rgba(0,0,0,0.15);">
-                                <h2 style="font-size:3rem;font-weight:700;margin-bottom:10px;">Scholarships Available</h2>
-                                <p style="font-size:1.5rem;">Apply for merit-based scholarships</p>
-                            </div>
-                        </div>
-                        <!-- Slide 6 -->
-                        <div class="swiper-slide pos-rel">
-                            <img src="assets/img/hero/slide6.jpg" alt="Slide 6" style="width:100%;height:800px;object-fit:cover;display:block;">
-                            <div class="hero-caption" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;text-align:center;
-                                background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:30px 60px;border-radius:10px;box-shadow:0 4px 32px 0 rgba(0,0,0,0.15);">
-                                <h2 style="font-size:3rem;font-weight:700;margin-bottom:10px;">Career-Oriented Programs</h2>
-                                <p style="font-size:1.5rem;">Prepare for your future</p>
-                            </div>
-                        </div>
-                        <!-- Slide 7 -->
-                        <div class="swiper-slide pos-rel">
-                            <img src="assets/img/hero/slide7.jpg" alt="Slide 7" style="width:100%;height:800px;object-fit:cover;display:block;">
-                            <div class="hero-caption" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;text-align:center;
-                                background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:30px 60px;border-radius:10px;box-shadow:0 4px 32px 0 rgba(0,0,0,0.15);">
-                                <h2 style="font-size:3rem;font-weight:700;margin-bottom:10px;">Vibrant Student Life</h2>
-                                <p style="font-size:1.5rem;">Join clubs and activities</p>
-                            </div>
-                        </div>
-                        <!-- Slide 8 -->
-                        <div class="swiper-slide pos-rel">
-                            <img src="assets/img/hero/slide8.jpg" alt="Slide 8" style="width:100%;height:800px;object-fit:cover;display:block;">
-                            <div class="hero-caption" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;text-align:center;
-                                background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:30px 60px;border-radius:10px;box-shadow:0 4px 32px 0 rgba(0,0,0,0.15);">
-                                <h2 style="font-size:3rem;font-weight:700;margin-bottom:10px;">Global Opportunities</h2>
-                                <p style="font-size:1.5rem;">Exchange programs available</p>
-                            </div>
-                        </div>
-                        <!-- Slide 9 -->
-                        <div class="swiper-slide pos-rel">
-                            <img src="assets/img/hero/slide9.jpg" alt="Slide 9" style="width:100%;height:800px;object-fit:cover;display:block;">
-                            <div class="hero-caption" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;text-align:center;
-                                background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:30px 60px;border-radius:10px;box-shadow:0 4px 32px 0 rgba(0,0,0,0.15);">
-                                <h2 style="font-size:3rem;font-weight:700;margin-bottom:10px;">Modern Classrooms</h2>
-                                <p style="font-size:1.5rem;">Interactive learning environment</p>
-                            </div>
-                        </div>
-                        <!-- Slide 10 -->
-                        <div class="swiper-slide pos-rel">
-                            <img src="assets/img/hero/slide10.jpg" alt="Slide 10" style="width:100%;height:800px;object-fit:cover;display:block;">
-                            <div class="hero-caption" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;text-align:center;
-                                background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:30px 60px;border-radius:10px;box-shadow:0 4px 32px 0 rgba(0,0,0,0.15);">
-                                <h2 style="font-size:3rem;font-weight:700;margin-bottom:10px;">Safe & Secure Campus</h2>
-                                <p style="font-size:1.5rem;">Your safety is our priority</p>
-                            </div>
-                        </div>
-                        <!-- Slide 11 -->
-                        <div class="swiper-slide pos-rel">
-                            <img src="assets/img/hero/slide11.jpg" alt="Slide 11" style="width:100%;height:800px;object-fit:cover;display:block;">
-                            <div class="hero-caption" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;text-align:center;
-                                background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:30px 60px;border-radius:10px;box-shadow:0 4px 32px 0 rgba(0,0,0,0.15);">
-                                <h2 style="font-size:3rem;font-weight:700;margin-bottom:10px;">Experienced Mentors</h2>
-                                <p style="font-size:1.5rem;">Guiding you to success</p>
-                            </div>
-                        </div>
-                        <!-- Slide 12 -->
-                        <div class="swiper-slide pos-rel">
-                            <img src="assets/img/hero/slide12.jpg" alt="Slide 12" style="width:100%;height:800px;object-fit:cover;display:block;">
-                            <div class="hero-caption" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;text-align:center;
-                                background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:30px 60px;border-radius:10px;box-shadow:0 4px 32px 0 rgba(0,0,0,0.15);">
-                                <h2 style="font-size:3rem;font-weight:700;margin-bottom:10px;">Apply Today</h2>
-                                <p style="font-size:1.5rem;">Start your journey with us</p>
-                            </div>
-                        </div>
-                         <div class="swiper-slide pos-rel">
-                            <img src="assets/img/hero/slide12.jpg" alt="Slide 12" style="width:100%;height:800px;object-fit:cover;display:block;">
-                            <div class="hero-caption" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;text-align:center;
-                                background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:30px 60px;border-radius:10px;box-shadow:0 4px 32px 0 rgba(0,0,0,0.15);">
-                                <h2 style="font-size:3rem;font-weight:700;margin-bottom:10px;">Apply Today</h2>
-                                <p style="font-size:1.5rem;">Start your journey with us</p>
-                            </div>
-                        </div>
-                         <div class="swiper-slide pos-rel">
-                            <img src="assets/img/hero/hero_img02.png" alt="Slide 12" style="width:100%;height:800px;object-fit:cover;display:block;">
-                            <div class="hero-caption" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;text-align:center;
-                                background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:30px 60px;border-radius:10px;box-shadow:0 4px 32px 0 rgba(0,0,0,0.15);">
-                                <h2 style="font-size:3rem;font-weight:700;margin-bottom:10px;">Apply Today</h2>
-                                <p style="font-size:1.5rem;">Start your journey with us</p>
+                            <div class="hs-btn mt-35 wow fadeInUp" data-wow-delay="600ms" data-wow-duration=".4s">
+                                <a class="thm-btn thm-btn--two" href="contact.html">register now
+                                    <span><img src="assets/img/icon/learning01.png" alt=""></span>
+                                </a> 
                             </div>
                         </div>
                     </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
-                    <!-- Add Navigation -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <div class="col-lg-6">
+                        <div class="hero-right">
+                            <img class="wow fadeInRight" data-wow-delay="200ms" data-wow-duration=".6s" src="assets/img/hero/hero_img03.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- hero carousel section end -->
-        <!-- hero carousel section end -->
+        <!-- hero section end  -->
 
         <!-- feature + about section start  -->
          <section class="about hs-about pt-115 pb-115 pos-rel">
@@ -389,7 +287,7 @@
                     <div class="col-lg-6">
                         <div class="hs-about_left mt-20">
                             <div class="about-img wow skewIn">
-                                <video src="assets/img/about/about-img02.png" alt="">
+                                <img src="assets/img/about/about-img02.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -907,7 +805,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 mt-30">
                         <div class="footer-widget mt-10">
                             <div class="xb-item--logo mb-30"><a href="#!"><img src="assets/img/logo/logo_white.png" alt=""></a></div>
-                            <span class="xb-item--details">The PEACE Group of Schools and Colleges is a private network across KPK, offering quality education from Montessori to F.Sc. With a focus on skill development and academic excellence, we nurture every student’s unique potential.</span>
+                            <span class="xb-item--details">25/1, N.I.A. Post Office, Balewadi, <br> Bristol – BS1 5TA, England, <br> United Kingdom</span>
                         </div>
                     </div>
                     <div class="col-xl-2 col-lg-4 col-md-6 mt-30">
@@ -959,30 +857,29 @@
                 </div>
                 <div class="hs-footer-contact mt-90 ul_li_between">
                     <ul class="xb-item--social_link ul_li mt-20">
-                        <li><a href="https://www.facebook.com/share/16EQDtYrsW/"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="https://twitter.com/@tpsc_officials"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#!"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9.52217 6.77491L15.4785 0H14.0671L8.89516 5.88256L4.76437 0H0L6.24656 8.89547L0 16H1.41155L6.87321 9.78782L11.2356 16H16L9.52183 6.77491H9.52217ZM7.58887 8.97384L6.95596 8.08805L1.92015 1.03974H4.0882L8.15216 6.72795L8.78507 7.61374L14.0677 15.0075H11.8997L7.58887 8.97418V8.97384Z" fill="#161A2C" />
                             </svg></a></li>
-                           <li> <a href="https://api.whatsapp.com/send?phone=923423131444&text=Link%3A%0Ahttps%3A%2F%2Ffb.me%2F16yjf7qcK%0A%0AI%20saw%20this%20on%20Facebook...&source_url=https%3A%2F%2Ffb.me%2F16yjf7qcK&icebreaker=I%20saw%20this%20on%20Facebook...&app=facebook&entry_point=post_ct"><i class="fab fa-whatsapp"></i></a></li> 
-                        <li><a href="https://www.linkedin.com/company/thepeacegroup-ho/"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="https://l.instagram.com/?u=http%3A%2F%2Fthepeace.edu.pk%2F&e=AT3iSN2V-Bt0BhrTuJNP3XLjYq5Kvu7vy35C3wD9mgvvX45DjM5BDOAqXGoKzPf2sNUx-HzX-Gx2BeALUfJb_kfHm2XtTmvdlYOn2k_1oPHQ_jn_"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#!"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
                     </ul>
                     <ul class="xb-item--contact list-unstyled mt-20">
                         <li>
-                            <span class="xb-item--text">Phone Number</span>
-                            <h3 class="xb-item--number">0992-406107-8</h3>
+                            <span class="xb-item--text">Contact Number</span>
+                            <h3 class="xb-item--number">+61-8-8967 5983</h3>
                         </li>
                     </ul>
                     <ul class="xb-item--contact list-unstyled mt-20">
                         <li>
-                            <span class="xb-item--text">Mobile Number:</span>
-                            <h3 class="xb-item--number">03423131444</h3>
+                            <span class="xb-item--text">Emergency Number:</span>
+                            <h3 class="xb-item--number">+61-8-8967 5983</h3>
                         </li>
                     </ul>
                     <ul class="xb-item--contact list-unstyled mt-20">
                         <li>
                             <span class="xb-item--text">Our Email:</span>
-                            <h3 class="xb-item--number">info@thepeace.edu.pk</h3>
+                            <h3 class="xb-item--number">edubost@gmail.com</h3>
                         </li>
                     </ul>
                 </div>
@@ -1021,29 +918,7 @@
 <script src="assets/js/jquery.nice-select.min.js"></script>
 <script src="assets/js/jquery.magnific-popup.min.js"></script>
 <script src="assets/js/main.js"></script>
- <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            new Swiper('.hero-swiper', {
-                loop: true,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev'
-                },
-                autoplay: {
-                    delay: 4000,
-                    disableOnInteraction: false
-                },
-                effect: 'fade',
-                fadeEffect: {
-                    crossFade: true
-                }
-            });
-        });
-        </script>
+
 </body>
 
 </html>
