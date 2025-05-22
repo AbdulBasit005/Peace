@@ -34,6 +34,136 @@
     </a>
 </div>
 <!-- backtotop - end -->
+    <!-- POPUP START -->
+    <style>
+    .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(10, 34, 64, 0.75);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        transition: opacity 0.3s;
+    }
+    .popup {
+        background: #fff;
+        border-radius: 16px;
+        max-width: 420px;
+        width: 95%;
+        box-shadow: 0 8px 32px rgba(10,34,64,0.18);
+        position: relative;
+        padding: 0;
+        animation: popupIn 0.4s;
+    }
+    @keyframes popupIn {
+        from { transform: scale(0.8); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+    }
+    .popup .close {
+        position: absolute;
+        top: 10px;
+        right: 18px;
+        font-size: 2rem;
+        color: #e63946;
+        cursor: pointer;
+        z-index: 2;
+        font-weight: bold;
+        transition: color 0.2s;
+    }
+    .popup .close:hover {
+        color: #0a2240;
+    }
+    .popup-content {
+        padding: 0 24px 24px 24px;
+    }
+    .popup-content img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 16px 16px 0 0;
+        margin-bottom: 16px;
+    }
+    .popup-content .text {
+        font-size: 1rem;
+        color: #0a2240;
+    }
+    .popup-content ul {
+        padding-left: 1.2em;
+        margin-bottom: 10px;
+    }
+    .popup-content ul li {
+        margin-bottom: 4px;
+        list-style: disc;
+    }
+    .popup-content a {
+        color: #e63946;
+        font-weight: 600;
+        word-break: break-all;
+    }
+    @media (max-width: 600px) {
+        .popup {
+            max-width: 98vw;
+            padding: 0;
+        }
+        .popup-content img {
+            height: 140px;
+        }
+        .popup-content {
+            padding: 0 10px 16px 10px;
+        }
+    }
+    </style>
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup" id="popup">
+            <span class="close" id="closePopup">&times;</span>
+            <div class="popup-content">
+                <img src="fsc172.jpg" alt="Admissions Open">
+                <div class="text">
+                    <p><strong>Admissions Open for Session 2025-2026!</strong><br>
+                    Join The PEACE Group of Schools & Colleges and take the first step toward a rewarding career.</p>
+                    <ul>
+                        <li>📚 Admissions Open!</li>
+                        <li>🎓 Montessori to F.Sc-I</li>
+                        <li>🗓 Session 2025-2026</li>
+                        <li>🎖 Scholarships Available</li>
+                        <li>🔢 Limited Seats – Apply Now!</li>
+                        <li>🌟 Secure your child’s bright future today!</li>
+                    </ul>
+                    <a href="https://admissions.thepeace.edu.pk/" target="_blank">🌐 Enroll now at https://admissions.thepeace.edu.pk</a>
+                    <br><br>
+                    ☎ For more details, call us:<br>
+                    Abbottabad Boys: 0342-3131444 / Tel: 0992-406107-08<br>
+                    Abbottabad Girls: 0317-3131444 / Tel: 0992-408124<br>
+                    Mansehra Campus: 0316-4141333 / Tel: 0997-381475<br>
+                    Haripur Campus: 0336-4141333 / 0995-627211-12<br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var popupOverlay = document.getElementById('popupOverlay');
+        var closePopup = document.getElementById('closePopup');
+        // Show popup after 1.5 seconds
+        setTimeout(function() {
+            popupOverlay.style.display = 'flex';
+        }, 1500);
+        closePopup.onclick = function() {
+            popupOverlay.style.display = 'none';
+        };
+        // Close popup when clicking outside the popup box
+        popupOverlay.onclick = function(e) {
+            if (e.target === popupOverlay) {
+                popupOverlay.style.display = 'none';
+            }
+        };
+    });
+    </script>
+    <!-- POPUP END -->
 
  <!-- Preloader - Start -->
  <div id="preloader" class="preloader-two">
@@ -48,7 +178,7 @@
 
 <div class="body_wrap">
 
-    <!-- header start -->
+  <!-- header start -->
     <header id="xb-header-area" class="header-area header-style-two header-style-three is-sticky">
         <div class="xb-header">
             <div class="container">
@@ -69,28 +199,21 @@
                                     <a href="admission.html">Admission</a>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="#!">Courses</a>
+                                    <a href="courses.html">Courses</a>
                                     <ul class="submenu">
-                                        <li><a href="courses.html">Courses</a></li>
-                                        <li><a href="course-single.html">Course Details</a></li>
+                                        <li><a href="courses.html">Montessori</a></li>
+                                        <li><a href="courses.html">Primary</a></li>
+                                        <li><a href="courses.html">Middle</a></li>
+                                        <li><a href="courses.html">Matriculation</a></li>
+                                        <li><a href="courses.html">Intermediate</a></li>    
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children">
                                     <a href="about.html">About Us</a>
                                     <ul class="submenu">
                                         <!-- <li><a href="about.html">About Us</a></li> -->
-                                        <li class="menu-item-has-children"><a href="blog.html">Blog</a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="blog-single.html">Blog Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item-has-children"><a href="event.html">Event</a>
-                                            <ul class="submenu">
-                                                <li><a href="event.html">Event</a></li>
-                                                <li><a href="event-single.html">Event Details</a></li>
-                                            </ul>
-                                        </li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="event.html">Event</a></li>
                                         <li class="menu-item-has-children"><a href="team.html">Team</a>
                                             <ul class="submenu">
                                                 <li><a href="team.html">Team</a></li>
@@ -117,7 +240,7 @@
                                         <li><a href="haripur.html">Haripur</a></li>
                                         <li><a href="swabi.html">Sawabi</a></li>
                                         <li><a href="mardan.html">Mardan</a></li>
-                                        <li><a href="#!">Nowsehra</a></li>
+                                        <li><a href="nowshera.html">Nowsehra</a></li>
                                         <li><a href="charsada.html">Charsadda</a></li>
                                         <li><a href="swat.html">Sawat</a></li>
                                     </ul>
@@ -237,7 +360,7 @@
                                     <div class="col-lg-6">
                                         <div class="hero__content-wrap">
                                             <div class="section-title clr-white pt-25">
-                                                <span class="sub-title wow fadeInUp" data-wow-delay="0ms" data-wow-duration=".4s">Welcome to The Peace School and College Abottabad(Hill campus)</span>
+                                                <span class="sub-title wow fadeInUp" data-wow-delay="0ms" data-wow-duration=".4s">Welcome to The Peace School and College Abottabad(Boys campus)</span>
                                                 <h1 class="title mb-25 wow fadeInUp" data-wow-delay="200ms" data-wow-duration=".4s">Empowering Students, Shaping Futures</h1>
                                                 <p class="content wow fadeInUp" data-wow-delay="400ms" data-wow-duration=".4s">
                                                     At The Peace School and College, we are committed to nurturing young minds with quality education, strong values, and a supportive environment for lifelong success.
@@ -265,7 +388,7 @@
                                     <div class="col-lg-6">
                                         <div class="hero__content-wrap">
                                             <div class="section-title clr-white pt-25">
-                                                <span class="sub-title wow fadeInUp" data-wow-delay="0ms" data-wow-duration=".4s">Welcome to The Peace School and College Abbottabad (Silk Campus)</span>
+                                                <span class="sub-title wow fadeInUp" data-wow-delay="0ms" data-wow-duration=".4s">Welcome to The Peace School and College Abbottabad (Girls Campus)</span>
                                                 <h1 class="title mb-25 wow fadeInUp" data-wow-delay="200ms" data-wow-duration=".4s">Empowering Young Women, Inspiring Excellence</h1>
                                                 <p class="content wow fadeInUp" data-wow-delay="400ms" data-wow-duration=".4s">
                                                     At The Peace School and College Girls Campus, we are committed to fostering academic achievement, leadership, and personal growth in a safe and supportive environment for every student.
@@ -280,7 +403,7 @@
                                     </div>
                                     <div class="col-lg-6 col-12">
                                         <div class="hero__img-wrap text-center">
-                                            <img src="assets/img/hero/hero_img02.png" alt="Hero Image" class="img-fluid wow fadeInRight" data-wow-delay="300ms" data-wow-duration=".6s">
+                                            <img src="assets/img/hero/abbottabadboys.png" alt="Hero Image" class="img-fluid wow fadeInRight" data-wow-delay="300ms" data-wow-duration=".6s">
                                         </div>
                                     </div>
                                 </div>
@@ -418,6 +541,7 @@
                     <div class="px-4 text-center">
 
                         <div class="badge bg-white text-primary mb-2" style="font-size:1rem;">Grade 1 to 8</div>
+                        <div><h3 style="color: white;">Abbottabad Campus</h3></div>
                         <p class="text-white-50 mb-2">                       
                         Our Grade 1 to 8 program focuses on building a strong academic foundation, nurturing curiosity, and developing essential life skills. Students benefit from a supportive environment, experienced teachers, and a curriculum designed to inspire lifelong learning and personal growth.
                         </p>
@@ -441,6 +565,7 @@
             <div class="px-4 text-center">
           
             <div class="badge bg-white text-primary mb-2" style="font-size:1rem;">Grade 9-10</div>
+            <div><h3 style="color: white;">Abbottabad Campus</h3></div>
             <p class="text-white-50 mb-2">
                 Our Grade 9 and 10 program emphasizes academic excellence, critical thinking, and exam readiness. Students receive focused instruction, mentorship, and resources to excel in board examinations, while also developing leadership and teamwork skills for future success.
             </p>
@@ -464,6 +589,7 @@
             <div class="px-4 text-center">
           
             <div class="badge bg-white text-primary mb-2" style="font-size:1rem; color: #0a2240;">Grade 11-12</div>
+            <div><h3 style="color: white;">Abbottabad Campus</h3></div>
             <p class="text-white-50 mb-2">
                 Our Grade 11 and 12 program is designed to prepare students for higher education and future careers. With advanced coursework, expert faculty, and personalized guidance, students gain the knowledge, skills, and confidence needed to excel in university entrance exams and beyond.
             </p>
@@ -769,10 +895,10 @@
                         <div class="footer-widget">
                             <h3 class="xb-item--title">Campuses</h3>
                             <ul class="xb-item--links list-unstyled">
-                                <li><a href="#!">Abbottabad Campus</a></li>
+                                <li><a href="index.html">Abbottabad Campus</a></li>
                                 <li><a href="Manshera campus.html">Manshera Campus</a></li>
                                 <li><a href="haripur.html">Haripur Campus</a></li>
-                                <li><a href="#!">Swabi Campus</a></li>
+                                <li><a href="swabi.html">Swabi Campus</a></li>
                                 <li><a href="mardan.html">Mardan Campus</a></li>
                                 <li><a href="nowshera.html">Nowsehra Campus</a></li>
                                 <li><a href="charsada.html">Charsadda Campus</a></li>
