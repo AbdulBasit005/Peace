@@ -111,16 +111,38 @@
     @media (max-width: 800px) {
         .popup-content {
             flex-direction: column;
-            align-items: stretch;
-            gap: 12px;
-            padding: 10px;
+            gap: 10px;
+            padding: 12px;
         }
         .popup-content img {
             width: 100%;
-            height: 140px;
-            border-radius: 16px 16px 0 0;
+            height: 90px;
+            border-radius: 8px 8px 0 0;
         }
     }
+    @media (max-width: 500px) {
+        .popup {
+            max-width: 99vw;
+            border-radius: 8px;
+        }
+        .popup-content {
+            padding: 2px;
+            gap: 2px;
+        }
+        .popup .close {
+            top: 2px;
+            right: 6px;
+            font-size: 1.1rem;
+        }
+        .popup-content img {
+            height: 48px;
+            border-radius: 6px 6px 0 0;
+        }
+        }
+        .popup-content .text {
+            font-size: 0.9rem;
+        }
+    
     </style>
     <div class="popup-overlay" id="popupOverlay">
         <div class="popup" id="popup">
