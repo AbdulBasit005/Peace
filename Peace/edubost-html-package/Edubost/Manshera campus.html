@@ -35,6 +35,164 @@
 </div>
 <!-- backtotop - end -->
 
+ <!-- POPUP START -->
+    <style>
+    .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(10, 34, 64, 0.75);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        transition: opacity 0.3s;
+    }
+    .popup {
+        background: #fff;
+        border-radius: 16px;
+        max-width: 820px;
+        width: 95%;
+        box-shadow: 0 8px 32px rgba(10,34,64,0.18);
+        position: relative;
+        padding: 0;
+        animation: popupIn 0.4s;
+    }
+    @keyframes popupIn {
+        from { transform: scale(0.8); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+    }
+    .popup .close {
+        position: absolute;
+        top: 10px;
+        right: 18px;
+        font-size: 2rem;
+        color: #e63946;
+        cursor: pointer;
+        z-index: 2;
+        font-weight: bold;
+        transition: color 0.2s;
+    }
+    .popup .close:hover {
+        color: #0a2240;
+    }
+    .popup-content {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        padding: 24px;
+    }
+    .popup-content img {
+        width: 220px;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 16px;
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+    .popup-content .text {
+        font-size: 1rem;
+        color: #0a2240;
+    }
+    .popup-content ul {
+        padding-left: 1.2em;
+        margin-bottom: 10px;
+    }
+    .popup-content ul li {
+        margin-bottom: 4px;
+        list-style: disc;
+    }
+    .popup-content a {
+        color: #e63946;
+        font-weight: 600;
+        word-break: break-all;
+    }
+    @media (max-width: 800px) {
+        .popup-content {
+            flex-direction: column;
+            gap: 10px;
+            padding: 12px;
+        }
+        .popup-content img {
+            width: 100%;
+            height: 90px;
+            border-radius: 8px 8px 0 0;
+        }
+    }
+    @media (max-width: 500px) {
+        .popup {
+            max-width: 99vw;
+            border-radius: 8px;
+        }
+        .popup-content {
+            padding: 2px;
+            gap: 2px;
+        }
+        .popup .close {
+            top: 2px;
+            right: 6px;
+            font-size: 1.1rem;
+        }
+        .popup-content img {
+            height: 48px;
+            border-radius: 6px 6px 0 0;
+        }
+        }
+        .popup-content .text {
+            font-size: 0.9rem;
+        }
+    
+    </style>
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup" id="popup">
+            <span class="close" id="closePopup">&times;</span>
+            <div class="popup-content">
+                <img src="assets/img/about/atd1.jpeg" alt="Admissions Open" style="width:340px;height:440px;object-fit:cover;max-width:100%;border-radius:16px;">
+                <div class="text">
+                    <p><strong>Admissions Open for Session 2025-2026!</strong><br>
+                    Join The PEACE Group of Schools & Colleges and take the first step toward a rewarding career.</p>
+                    <ul>
+                        <li>📚 Admissions Open!</li>
+                        <li>🎓 Montessori to F.Sc-I</li>
+                        <li>🗓 Session 2025-2026</li>
+                        <li>🎖 Scholarships Available</li>
+                        <li>🔢 Limited Seats – Apply Now!</li>
+                        <li>🌟 Secure your child’s bright future today!</li>
+                    </ul>
+                    <a href="https://admissions.thepeace.edu.pk/" target="_blank">🌐 Enroll now at https://admissions.thepeace.edu.pk</a>
+                    <br><br>
+                    ☎ For more details, call us:<br>
+                    Abbottabad Boys: 0342-3131444 / Tel: 0992-406107-08<br>
+                    Abbottabad Girls: 0317-3131444 / Tel: 0992-408124<br>
+                    Mansehra Campus: 0316-4141333 / Tel: 0997-381475<br>
+                    Haripur Campus: 0336-4141333 / 0995-627211-12<br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var popupOverlay = document.getElementById('popupOverlay');
+        var closePopup = document.getElementById('closePopup');
+        // Show popup after 1.5 seconds
+        setTimeout(function() {
+            popupOverlay.style.display = 'flex';
+        }, 1500);
+        closePopup.onclick = function() {
+            popupOverlay.style.display = 'none';
+        };
+        // Close popup when clicking outside the popup box
+        popupOverlay.onclick = function(e) {
+            if (e.target === popupOverlay) {
+                popupOverlay.style.display = 'none';
+            }
+        };
+    });
+    </script>
+    <!-- POPUP END -->
+
  <!-- Preloader - Start -->
  <div id="preloader" class="preloader-two">
     <div id="loader" class="loader">
