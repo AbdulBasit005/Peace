@@ -1,12 +1,9 @@
 $(document).ready(function() {
-
 	// click class active
 	$("ul li a").click(function() {
 	  	$("ul li").removeClass('current');
 		$(this).parent().addClass('current');
 	});
-
-
 	// Add smooth scrolling to all links
     $("a").on('click', function (event) {
         // Make sure this.hash has a value before overriding default behavior
