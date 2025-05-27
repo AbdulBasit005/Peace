@@ -480,37 +480,61 @@
         <hr><br>
         <!-- Topper of 2024 Section -->
         <section class="my-5">
-            <h2 class="text-center mb-4">Topper of 2024</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 text-center">
-                        <img src="assets/img/" class="card-img-top mx-auto" alt="Topper 1" style="max-width: 260px; max-height: 320px; width: 100%; height: auto;">
-                        <div class="card-body">
-                            <h5 class="card-title">Ayesha Khan</h5>
-                            <p class="card-text">Abbottabad Campus<br>Marks: 1090/1100</p>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 text-center shadow border-0 topper-card" style="border-radius: 18px; background: linear-gradient(135deg, #e63946 60%, #fff 100%);">
+                            <img src="assets/img/toppers2024/atdboard.jpeg" class="card-img-top mx-auto p-3 topper-img" alt="Abbottabad Board Topper" style="max-width: 220px; max-height: 280px; width: 100%; height: auto; border-radius: 14px;">
+                            <div class="card-body" style="background: #fff; border-radius: 0 0 18px 18px;">
+                                <h5 class="card-title fw-bold text-danger mb-2">Abbottabad Board</h5>
+                                <p class="card-text text-muted mb-0">Topper 2024</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 text-center">
-                        <img src="assets/img/toppers2024/2.jpg" class="card-img-top mx-auto" alt="Topper 2" style="max-width: 260px; max-height: 320px; width: 100%; height: auto;">
-                        <div class="card-body">
-                            <h5 class="card-title">Bilal Ahmed</h5>
-                            <p class="card-text">Mardan Campus<br>Marks: 1087/1100</p>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 text-center shadow border-0 topper-card" style="border-radius: 18px; background: linear-gradient(135deg, #e63946 60%, #fff 100%);">
+                            <img src="assets/img/toppers2024/mardan.jpeg" class="card-img-top mx-auto p-3 topper-img" alt="Mardan Board Topper" style="max-width: 220px; max-height: 280px; width: 100%; height: auto; border-radius: 14px;">
+                            <div class="card-body" style="background: #fff; border-radius: 0 0 18px 18px;">
+                                <h5 class="card-title fw-bold text-danger mb-2">Mardan Board</h5>
+                                <p class="card-text text-muted mb-0">Topper 2024</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 text-center">
-                        <img src="assets/img/toppers/2024_topper3.jpg" class="card-img-top mx-auto" alt="Topper 3" style="max-width: 260px; max-height: 320px; width: 100%; height: auto;">
-                        <div class="card-body">
-                            <h5 class="card-title">Sana Ullah</h5>
-                            <p class="card-text">Swat Campus<br>Marks: 1085/1100</p>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 text-center shadow border-0 topper-card" style="border-radius: 18px; background: linear-gradient(135deg, #e63946 60%, #fff 100%);">
+                            <img src="assets/img/toppers2024/peshwarboard.jpeg" class="card-img-top mx-auto p-3 topper-img" alt="Peshawar Board Topper" style="max-width: 220px; max-height: 280px; width: 100%; height: auto; border-radius: 14px;">
+                            <div class="card-body" style="background: #fff; border-radius: 0 0 18px 18px;">
+                                <h5 class="card-title fw-bold text-danger mb-2">Peshawar Board</h5>
+                                <p class="card-text text-muted mb-0">Topper 2024</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <style>
+            .topper-card {
+                box-shadow: 0 4px 24px rgba(10,34,64,0.10);
+                transition: transform 0.2s, box-shadow 0.2s;
+            }
+            .topper-card:hover {
+                transform: translateY(-8px) scale(1.03);
+                box-shadow: 0 8px 32px rgba(230,57,70,0.18);
+            }
+            .topper-img {
+                max-width: 220px;
+                max-height: 280px;
+                width: 100%;
+                height: auto;
+                border-radius: 14px;
+            }
+            @media (max-width: 768px) {
+                .topper-img {
+                    max-width: 140px;
+                    max-height: 180px;
+                }
+            }
+        </style>
         <!-- Topper Sliders Section -->
         <section class="my-5">
             <div class="container">
@@ -623,30 +647,7 @@
                         </button>
                     </div>
                 </div>
-                <!-- Peshawar Board -->
-                <div class="mb-5">
-                    <h2 class="text-center mb-4">Topper of 2024 Peshawar Board</h2>
-                    <div id="peshawarSlider" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="assets/img/toppers/peshawar1.jpg" class="d-block mx-auto rounded" alt="Peshawar Topper 1" style="max-width: 320px; max-height: 320px; width: 100%; height: auto;">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/toppers/peshawar2.jpg" class="d-block mx-auto rounded" alt="Peshawar Topper 2" style="max-width: 320px; max-height: 320px; width: 100%; height: auto;">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/toppers/peshawar3.jpg" class="d-block mx-auto rounded" alt="Peshawar Topper 3" style="max-width: 320px; max-height: 320px; width: 100%; height: auto;">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#peshawarSlider" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#peshawarSlider" data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
-                    </div>
-                </div>
-            </div>
+               
         </section>
         <script>
             // Auto-slide all carousels with different intervals to desync them
